@@ -8,7 +8,7 @@
 #include <stdlib.h>
 
 //---------------------------------------------------------------------------
-static int encontrarImpar(int arrayBuscar[], int indice);
+static int encontrarImpar(int arrayBuscar[], int indice);//static, su firma va junto a las funciones.
 int utn_getNumero(int* pResultado, char*mensaje, char*mensajeError, int reintentos){
 //siempre que recibo un puntero me fijo que la direccion de memoria no sea NULL. (!=NULL)=>obligatorio.
 	int retorno=-1;
