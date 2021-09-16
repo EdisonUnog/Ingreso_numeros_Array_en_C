@@ -56,7 +56,7 @@ float promedioNumeros(int arrayNumeross[],int len){
 }
 //-----------IMPRIMIR_RESULTADO--------------------------------------------------
 void imprimirResultado(int numero){
-	printf(" >>> %d",numero);
+	printf("    >>> %d",numero);
 }
 //----------BORRAR-IMPARES------------------------------------------------------
 int borrarImparesArray(int arrayEnteros[], int tamanioArray){

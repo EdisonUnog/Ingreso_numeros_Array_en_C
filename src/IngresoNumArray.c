@@ -38,11 +38,11 @@ int main (void){
 
 	printf("\n");
 	for(i=0; i<NUMEROS;i++){
-		respuesta=utn_getNumero(&num,"\tINGRESA_NUMERO: \n\t>> ","\tError, esto no es numero\n",1);
+		respuesta=utn_getNumero(&num,"\t->INGRESA_NUMERO: \n\t>> ","\tError, esto no es numero\n",1);
 			if(respuesta==0){
 				arrayNumeros[i]=num;//en edades escribo edad en la posicion I.
 			}else{
-				printf("\tERROR definitivo de la condicion\n");
+				printf("\tERROR definitivo de la condicion\n\n");
 			}
 	}
         printf("\n\t->NUMEROS_INGRESADOS:");
