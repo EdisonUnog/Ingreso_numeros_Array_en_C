@@ -10,7 +10,8 @@
 /*
  * ---INGRESAR NUMEROS Y ORNENARLOS-------
  Ejercicio 2:
- a) Realizar un programa que le pida 5 numeros int al usuario y los almacene en un array.
+ a) Realizar un programa que le pida 5 numeros int al usuario y los almacene en un array,
+ Suma de los numeros y el promedio.
  Luego ejecutar la funcion borrarImpares() pasandole el array y que deberá reemplazar
  los numeros que son impares por un cero.
  b) Luego imprimir el array para chequear el funcionamiento.
@@ -29,9 +30,11 @@ int main (void){
 // INGRESO 5 NUMEROS, LOS GUARDO EN UN ARRAY._LO ORDENO, SACO IMPARES Y VUELVO A ORDENAR
 	int num;
 	int arrayNumeros[NUMEROS]; //5
+	int i;
 	int respuesta;
 	int orden;
-	int i;
+	int sumaNum;
+	float promNum;
 
 	printf("\n");
 	for(i=0; i<NUMEROS;i++){
@@ -45,11 +48,18 @@ int main (void){
         printf("\n\t->NUMEROS_INGRESADOS:");
 		imprimirArrayDeNumeros(arrayNumeros,NUMEROS);
 		printf("\n");
+  //------------------SUMA_DE_NUMEROS-----------------------------------------
+		sumaNum= sumaNumeros(arrayNumeros,NUMEROS);
+		printf("\n\t-SUMA: ");
+		imprimirResultado(sumaNum);
+ //-------------------PROMEDIO_DE_NUMEROS-------------------------------------
+		promNum = promedioNumeros(arrayNumeros,NUMEROS);
+		printf("\n\t-PROMEDIO: >>> %f",promNum);
 
   //------------------PRIMER_ORDEN_DE_NUMEROS---------------------------------
 		orden=ordenarArrayInt(arrayNumeros,NUMEROS);
 		if(orden>0){
-			printf("\n\t          -Iteraciones: %d\n",respuesta);
+			printf("\n\n\t          -Iteraciones: %d\n",respuesta);
 			printf("\t-------------- - a + -------------");
 		}
 		imprimirOrdenDeArray(arrayNumeros,NUMEROS);

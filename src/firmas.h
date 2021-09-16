@@ -10,6 +10,9 @@
 
 //---------FIRMAS------------------------------------------------------------
 int utn_getNumero(int* pResultado, char*mensaje, char*mensajeError, int reintentos);
+int sumaNumeros(int arrayNumerosss[],int len);
+float promedioNumeros(int arrayNumeross[],int len);
+void imprimirResultado(int numero);
 int borrarImparesArray(int arrayEnteros[], int tamanioArray);
 int ordenarArrayInt(int pArray[], int limite);
 int imprimirOrdenDeArray(int numArray[],int indice);

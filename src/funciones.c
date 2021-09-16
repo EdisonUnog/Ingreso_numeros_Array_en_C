@@ -30,6 +30,30 @@ int utn_getNumero(int* pResultado, char*mensaje, char*mensajeError, int reintent
 	}
 	return retorno;
 }
+//-----------SUMA_DE_NUMEROS-------------------------------------------------------
+int sumaNumeros(int arrayNumerosss[],int len){
+	int i;
+	int acumSuma=0;
+		for(i=0;i<len;i++){
+			acumSuma+=arrayNumerosss[i];
+		}
+		return acumSuma;
+	}
+//-----------PROMEDIO_DE_NUMEROS-------------------------------------------------
+float promedioNumeros(int arrayNumeross[],int len){
+	int i;
+	int acumSuma=0;
+	float prom;
+	for(i=0;i<len;i++){
+		acumSuma+=arrayNumeross[i];
+	}
+	prom=(float)acumSuma/len;
+	return prom;
+}
+//-----------IMPRIMIR_RESULTADO--------------------------------------------------
+void imprimirResultado(int numero){
+	printf(" >>> %d",numero);
+}
 //----------BORRAR-IMPARES------------------------------------------------------
 int borrarImparesArray(int arrayEnteros[], int tamanioArray){
 	int retorno=-1;
