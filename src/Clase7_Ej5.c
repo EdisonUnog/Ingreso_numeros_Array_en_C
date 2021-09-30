@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : IngresoNumArray.c
+ Name        : Clase7_Ej7.c
  Author      : Edison Francisco Uñog Valencia.
  Version     : 1
  Copyright   : Your copyright notice
@@ -38,7 +38,7 @@ int main (void){
 
 	printf("\n");
 	for(i=0; i<NUMEROS;i++){
-		respuesta=utn_getNumero(&num,"\t->INGRESA_NUMERO: \n\t>> ","\tError, esto no es numero\n",1);
+		respuesta=utn_getNumero(&num,"\t->INGRESA_NUMERO: \n\t >> ","\tError, esto no es numero\n",1);
 			if(respuesta==0){
 				arrayNumeros[i]=num;//en edades escribo edad en la posicion I.
 			}else{
