@@ -28,7 +28,7 @@
 int main (void){
 	setbuf(stdout,NULL);
 // INGRESO 5 NUMEROS, LOS GUARDO EN UN ARRAY._LO ORDENO, SACO IMPARES Y VUELVO A ORDENAR
-	//clone
+	//clone_
 	int num;
 	int arrayNumeros[NUMEROS]; //5
 	int i;
